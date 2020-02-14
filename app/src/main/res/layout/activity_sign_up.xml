@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/default_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:background="@drawable/signup_selflearn"
+        android:visibility="visible"
+        android:id="@+id/name_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_marginTop="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"
+            android:background="@drawable/mystyle"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="First Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            ></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/last"
+            android:background="@drawable/mystyle"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:hint="Last Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            ></EditText>
+
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back1"
+                android:onClick="gobackfirst"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:background="@drawable/mystyle3"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    android:text="back"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mystyle3"
+                    ></TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/next"
+                android:onClick="gonext"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:background="@drawable/mystyle3"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mystyle3"
+                    ></TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/default_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/email_input_layout"
+        android:visibility="gone"
+        >
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:background="@drawable/mystyle"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Username or Email"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            ></EditText>
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:background="@drawable/mystyle"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:hint="password"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            ></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password should be of 8 letter including at least one capital letter and one digit and one special character"
+            android:gravity="center"
+            ></TextView>
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:onClick="gobacksecond"
+                android:id="@+id/back2"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:background="@drawable/mystyle3"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+                    android:text="back"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mystyle3"
+                    ></TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:onClick="finish_click"
+                android:id="@+id/finish"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:background="@drawable/mystyle3"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:text="Finish"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mystyle3"
+                    ></TextView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

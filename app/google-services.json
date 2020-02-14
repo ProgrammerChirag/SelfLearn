@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202078082393",
+    "firebase_url": "https://selflearn-505b7.firebaseio.com",
+    "project_id": "selflearn-505b7",
+    "storage_bucket": "selflearn-505b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202078082393:android:377cf3ed3df4863ab0e848",
+        "android_client_info": {
+          "package_name": "com.chirag.selflearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202078082393-h7qmdsstr4dt8cgqi6gbdk2noe6hevpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chirag.selflearn",
+            "certificate_hash": "d36e37007795dc548cbbb67ad8655697a37fca18"
+          }
+        },
+        {
+          "client_id": "202078082393-qilm1ggvterlufnrqfo96pc011sa2j5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbdCAVVUO6dZonnqdkpNh36yHjnFuqyTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202078082393-qilm1ggvterlufnrqfo96pc011sa2j5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
